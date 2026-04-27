@@ -344,42 +344,42 @@ function FooterSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-16 lg:mb-20">
           {/* Logo / Tagline */}
           <div className="lg:col-span-3 flex flex-col items-start pr-4">
-            <h2 className="text-xl md:text-2xl font-bold tracking-[0.1em] mb-2 uppercase text-white">Prisma*</h2>
-            <p className="text-[10px] md:text-xs text-gray-400 font-semibold tracking-wider uppercase">Live Life On Your Terms</p>
+            <h2 className="text-xl md:text-2xl font-bold tracking-[0.1em] mb-2 uppercase text-white">TOUCH WOOD</h2>
+            <p className="text-[10px] md:text-xs text-gray-400 font-semibold tracking-wider uppercase">Handcrafted Excellence Since 2004</p>
           </div>
 
           {/* Links */}
           <div className="lg:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div className="flex flex-col gap-5">
-              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Shop</h3>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Presets</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Plugins</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Templates</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Bundles</a>
+              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Collections</h3>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Furniture</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Flooring</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Features</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Bespoke</a>
             </div>
             <div className="flex flex-col gap-5">
-              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Support</h3>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Help Center</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Documentation</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Warranty</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Contact Us</a>
+              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Craft</h3>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Our Process</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Materials</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Workshops</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Joinery</a>
             </div>
             <div className="flex flex-col gap-5">
-              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">About</h3>
+              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Company</h3>
               <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Our Story</a>
               <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Sustainability</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Affiliates</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Press</a>
               <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Careers</a>
             </div>
           </div>
 
           {/* Stay Connected */}
           <div className="lg:col-span-3 flex flex-col">
-            <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white mb-5">Stay Connected</h3>
+            <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white mb-5">Inquiries</h3>
             <div className="flex items-center w-full bg-transparent border border-[#303030] rounded-none px-4 py-3 mb-6 focus-within:border-[#505050] transition-colors group">
               <input 
                 type="email" 
-                placeholder="Enter your email" 
+                placeholder="Request a catalog" 
                 className="bg-transparent border-none outline-none w-full text-xs md:text-sm text-[#E1E0CC] placeholder:text-gray-500"
               />
               <button className="text-gray-500 group-focus-within:text-[#E1E0CC] hover:text-[#E1E0CC] transition-colors ml-2">
@@ -389,7 +389,6 @@ function FooterSection() {
             <div className="flex items-center gap-6 mt-1">
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Instagram size={18} strokeWidth={1.5} /></a>
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Facebook size={18} strokeWidth={1.5} /></a>
-              {/* Note: the reference image uses tiktok but we are using twitter since lucide has no tiktok */}
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Twitter size={18} strokeWidth={1.5} /></a>
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Youtube size={18} strokeWidth={1.5} /></a>
             </div>
@@ -398,7 +397,7 @@ function FooterSection() {
 
         {/* Bottom */}
         <div className="pt-6 border-t border-[#212121] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[11px] font-medium tracking-wide text-gray-500 uppercase">© {new Date().getFullYear()} PRISMA*. All Rights Reserved.</p>
+          <p className="text-[11px] font-medium tracking-wide text-gray-500 uppercase">© {new Date().getFullYear()} TOUCH WOOD. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
