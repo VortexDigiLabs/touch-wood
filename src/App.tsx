@@ -25,25 +25,22 @@ function HeroSection() {
           loop 
           muted 
           playsInline 
-          className="absolute inset-0 w-full h-full object-cover scale-105"
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/Aqua Vantage Pools (2).mp4"
         />
         
         {/* Overlays */}
-        <div className="absolute inset-0 noise-overlay opacity-[0.7] mix-blend-overlay pointer-events-none"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 pointer-events-none"></div>
         
         {/* Navbar */}
         <div className="absolute top-0 left-0 right-0 flex justify-center z-20">
-          <nav className="bg-black rounded-b-2xl md:rounded-b-3xl px-4 py-2 md:px-8 flex items-center gap-3 sm:gap-6 md:gap-12 lg:gap-14">
+          <nav className="bg-black/40 backdrop-blur-md rounded-b-2xl md:rounded-b-3xl px-6 py-3 md:px-10 flex items-center gap-4 sm:gap-8 md:gap-16 border-b border-white/10">
             {["Our story", "Collective", "Workshops", "Programs", "Inquiries"].map((item) => (
               <a 
                 key={item} 
                 href="#"
-                className="text-[10px] sm:text-xs md:text-sm transition-colors duration-300"
-                style={{ color: "rgba(225, 224, 204, 0.8)" }}
-                onMouseEnter={(e) => e.currentTarget.style.color = "#E1E0CC"}
-                onMouseLeave={(e) => e.currentTarget.style.color = "rgba(225, 224, 204, 0.8)"}
+                className="text-[11px] sm:text-xs md:text-sm font-medium transition-all duration-300 hover:text-white"
+                style={{ color: "rgba(255, 255, 255, 0.9)" }}
               >
                 {item}
               </a>
@@ -51,49 +48,8 @@ function HeroSection() {
           </nav>
         </div>
         
-        {/* Hero Content */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 lg:p-16 z-10 w-full flex justify-center pb-20 overflow-hidden">
-          <div className="scale-y-[2.2] origin-bottom tracking-tighter mt-12">
-            <HoverBounceCharacters 
-              text="TOUCH WOOD" 
-              className="text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] xl:text-[6vw] 2xl:text-[6.5vw] font-bodoni font-bold leading-[0.85] text-[#bab5ad]"
-            />
-          </div>
-        </div>
       </div>
     </section>
-  );
-}
-
-function HoverBounceCharacters({ text, className }: { text: string; className?: string }) {
-  const chars = Array.from(text);
-  
-  return (
-    <div className={`flex justify-center ${className}`}>
-      {chars.map((char, i) => (
-        char === " " ? (
-          <span key={i} className="whitespace-pre"> </span>
-        ) : (
-          <motion.span
-            key={i}
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-            whileHover={{ 
-              y: [0, -15, 0], 
-              transition: { 
-                duration: 0.4, 
-                repeat: Infinity, 
-                ease: "easeInOut" 
-              } 
-            }}
-            className="inline-block cursor-default"
-          >
-            {char}
-          </motion.span>
-        )
-      ))}
-    </div>
   );
 }
 
@@ -344,42 +300,42 @@ function FooterSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-16 lg:mb-20">
           {/* Logo / Tagline */}
           <div className="lg:col-span-3 flex flex-col items-start pr-4">
-            <h2 className="text-xl md:text-2xl font-bold tracking-[0.1em] mb-2 uppercase text-white">TOUCH WOOD</h2>
-            <p className="text-[10px] md:text-xs text-gray-400 font-semibold tracking-wider uppercase">Handcrafted Excellence Since 2004</p>
+            <h2 className="text-xl md:text-2xl font-bold tracking-[0.1em] mb-2 uppercase text-white">Prisma*</h2>
+            <p className="text-[10px] md:text-xs text-gray-400 font-semibold tracking-wider uppercase">Live Life On Your Terms</p>
           </div>
 
           {/* Links */}
           <div className="lg:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-8">
             <div className="flex flex-col gap-5">
-              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Collections</h3>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Furniture</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Flooring</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Features</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Bespoke</a>
+              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Shop</h3>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Presets</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Plugins</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Templates</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Bundles</a>
             </div>
             <div className="flex flex-col gap-5">
-              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Craft</h3>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Our Process</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Materials</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Workshops</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Joinery</a>
+              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Support</h3>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Help Center</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Documentation</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Warranty</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Contact Us</a>
             </div>
             <div className="flex flex-col gap-5">
-              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">Company</h3>
+              <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white">About</h3>
               <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Our Story</a>
               <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Sustainability</a>
-              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Press</a>
+              <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Affiliates</a>
               <a href="#" className="text-gray-400 text-xs md:text-sm hover:text-[#E1E0CC] transition-colors">Careers</a>
             </div>
           </div>
 
           {/* Stay Connected */}
           <div className="lg:col-span-3 flex flex-col">
-            <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white mb-5">Inquiries</h3>
+            <h3 className="text-[10px] md:text-xs font-bold tracking-[0.1em] uppercase text-white mb-5">Stay Connected</h3>
             <div className="flex items-center w-full bg-transparent border border-[#303030] rounded-none px-4 py-3 mb-6 focus-within:border-[#505050] transition-colors group">
               <input 
                 type="email" 
-                placeholder="Request a catalog" 
+                placeholder="Enter your email" 
                 className="bg-transparent border-none outline-none w-full text-xs md:text-sm text-[#E1E0CC] placeholder:text-gray-500"
               />
               <button className="text-gray-500 group-focus-within:text-[#E1E0CC] hover:text-[#E1E0CC] transition-colors ml-2">
@@ -389,6 +345,7 @@ function FooterSection() {
             <div className="flex items-center gap-6 mt-1">
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Instagram size={18} strokeWidth={1.5} /></a>
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Facebook size={18} strokeWidth={1.5} /></a>
+              {/* Note: the reference image uses tiktok but we are using twitter since lucide has no tiktok */}
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Twitter size={18} strokeWidth={1.5} /></a>
               <a href="#" className="text-white hover:text-[#E1E0CC]/80 transition-colors"><Youtube size={18} strokeWidth={1.5} /></a>
             </div>
@@ -397,7 +354,7 @@ function FooterSection() {
 
         {/* Bottom */}
         <div className="pt-6 border-t border-[#212121] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[11px] font-medium tracking-wide text-gray-500 uppercase">© {new Date().getFullYear()} TOUCH WOOD. All Rights Reserved.</p>
+          <p className="text-[11px] font-medium tracking-wide text-gray-500 uppercase">© {new Date().getFullYear()} PRISMA*. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
